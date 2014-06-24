@@ -118,3 +118,4 @@ Some endpoints support additional formats, including:
 
 * [Forms](forms.md)
 * [Responses](responses.md)
+* [Connectors](connectors.md)
