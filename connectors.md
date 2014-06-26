@@ -117,7 +117,11 @@ unchanged):
 | sequence| int, order of execution (0-based)|
 | status| int (0 or 1, disabled/enabled)|
 
-Return: As in `view` action above.
+Return:
+
+    {
+        "success": int, enum (0 or 1)
+    }
 
 ## Create connector
 
@@ -169,9 +173,10 @@ Delete an existing connector. URL parameters as above.
 
 Post fields:
 
-    {
-        "id": int, required (must match URL id)
-    }
+
+|name | value     |
+|-----|-----------|
+| id  | int, required: must match URL form id |
 
 Return:
 
